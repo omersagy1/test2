@@ -1,12 +1,12 @@
 import System.IO
 import Parser
 
-storyFile = "test.txt"
+scriptFile = "test.txt"
 
 main = 
-  readFile storyFile >>= 
-    (\storyText ->
+  readFile scriptFile >>= 
+    (\scriptText ->
       putStrLn "Unparsed:" >>
-      putStrLn storyText   >>
+      putStrLn scriptText   >>
       putStrLn "Parsed:"   >>
-      putStrLn (parse storyText))
+      putStrLn (show(parseScript scriptText)))

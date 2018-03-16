@@ -1,2 +1,1 @@
-{hello}
-{world}
+~ Once upon a time...

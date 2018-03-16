@@ -1,0 +1,14 @@
+-- Haskell Playground 1.0
+plusOne = (:['1'])
+(plusOne 'a')
+
+(unit "abcde")
+(parse unitParser "abcde")
+
+(parse (pure plusOne <*> unitParser) "abcdef")
+
+(parse (pure plusOne) "abcdef")
+
+(parse second "hello!")
+
+(parse two "hello!")
